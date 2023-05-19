@@ -1,12 +1,4 @@
-//
-//  pag-1.swift
-//  TwittrAps
-//
-//  Created by Apple on 16/05/2023.
-//
-
 import SwiftUI
-
 struct Pag_1: View {
     var body: some View {
         ScrollView {

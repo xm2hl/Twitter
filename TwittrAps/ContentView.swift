@@ -29,13 +29,19 @@ struct ContentView: View {
                 .scaleEffect(size)
                 .opacity(opacity)
                 .onAppear{
-                    withAnimation(.easeIn(duration: 1.2)){
+                    withAnimation(.easeIn(duration: 1.5)){
+                       
                         self.size = 0.9
-                        self.opacity = 1.0
+                        self.opacity = 1
+                    }
+                    withAnimation(.easeIn(duration: 2)){
+                       
+                        self.size = 110
+                        self.opacity = 1
                     }
                 }
                 .onAppear{
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 2.0){ withAnimation{
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 5.0){ withAnimation{
                         self.isActive = true
                     }
                         
